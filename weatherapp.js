@@ -1,7 +1,7 @@
 let weather = {
-    apiKey: "d964accf90e14b09967103945242201",
+    apiKey: "API_KEY",
     fetchWeather: function (city) {
-        fetch("https://api.weatherapi.com/v1/current.json?key=d964accf90e14b09967103945242201&q=" + city +" &aqi=yes"
+        fetch("https://api.weatherapi.com/v1/current.json?key={API_KEY}=" + city +" &aqi=yes"
         + this.apiKey)   
         .then((response) => response.json())  
         .then((data) => this.displayWeather(data));
